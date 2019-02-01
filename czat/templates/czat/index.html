@@ -1,0 +1,14 @@
+<!-- templates/czat/index.html -->
+<html>
+  <head></head>
+  <body>
+    <h1>Witaj w aplikacji Czat!</h1>
+     {% if messages %}
+        <ul>
+        {% for komunikat in messages %}
+           <li>{{ komunikat|capfirst }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+  </body>
+</html>
